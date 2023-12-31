@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lobster", sans-serif;
+    display: flex;
+    height: 100vh; /* Make the body take the full viewport height */
+    margin: 0;
+    background-image: url("https://phunugioi.com/wp-content/uploads/2021/12/background-Tet-1.jpg");
+    background-size: cover; /* Ensures the background image covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents the background image from repeating */
+    margin: 0;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the canvas cover the full viewport width */
+    height: 100%; /* Make the canvas cover the full viewport height */
+    pointer-events: none;
+}
+
+.container {
+    color: white;
+    width: 550px;
+    padding: 2%;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #0d2146;
+    margin-bottom: 25px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 50%;
+    margin: 50px 0;
+    border-radius: 10px;
+    margin-bottom: auto;
+}
+
+.decor-container__upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.decor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.strings {
+    height: 0;
+    width: 0.3rem;
+}
+
+.bulb {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.string1 {
+    height: 100px;
+    background-color: crimson;
+}
+
+.bulb1 {
+    background-color: crimson;
+}
+
+.string2 {
+    transition: all infinite ease-in;
+    height: 180px;
+    background-color: #f1a5c5;
+}
+
+.bulb2 {
+    background-color: #f1a5c5;
+}
+
+.string3 {
+    transition: all infinite ease-in;
+    height: 60px;
+    background-color: aqua ;
+}
+
+.bulb3 {
+    background-color: aqua ;
+}
+
+.string4 {
+    transition: all infinite ease-in;
+    height: 150px;
+    background-color: #d997dc;
+}
+
+.bulb4 {
+    background-color: #d997dc;
+}
+
+.text-container {
+    text-align: center;
+    color: #fff;
+}
+
+.text-container h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.clock {
+    display: flex;
+    font-size: 3rem;
+}
+
+.digit-container {
+    width: 50px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.digit {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    /* opacity: 0; */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: white;
+}
+.greeting_card{
+    font-family: 'Lobster', sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.text{
+    padding: 20px 80px;
+    font-size: 20px;
+    background-color: #0DC200;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

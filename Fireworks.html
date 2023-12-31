@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Phao Hoa</title>
+  <link rel="icon" href="https://anonyviet.com/resource/phaohoa2/favicon.ico" type="image/x-ico"/>
+
+  <link href="Fireworks.css" rel="stylesheet" />
+
+</head>
+<body>
+
+<div id="info">
+  <p style="color:red;" ><a href="Fire.html">Chúc Mừng Năm Mới 2024</a></p>
+</div>
+<div class="pyro"><div class="before"></div><div class="after"></div></div>
+<audio id="fireworksAudio" src="Tieng-ban-phao-hoa-www_tiengdong_com.mp3"></audio>
+<canvas id="canvas">Fireworks</canvas>
+<script type="text/javascript" src="Fireworks.js"> </script>
+<script>
+  // Play audio when the page loads
+  document.addEventListener("DOMContentLoaded", function () {
+    var audio = document.getElementById('fireworksAudio');
+    audio.play();
+  });
+</script>
+</body>
+</html>
